@@ -599,6 +599,19 @@ span[md-inline="underline"] u {
     background-color: transparent !important;
 }
 
+/*--- 代码块光标 ---*/
+.CodeMirror-cursor,
+.md-fences .CodeMirror-cursor,
+.md-rawblock-on-edit .CodeMirror-cursor,
+.md-math-block .CodeMirror-cursor {
+    border-left: 2px solid var(--caret-color) !important;
+    border-right: none !important;
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+    background-color: var(--caret-color) !important;
+}
+
 .md-fences .cm-keyword {
     color: #c084fc !important;
 }
